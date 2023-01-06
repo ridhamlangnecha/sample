@@ -1,0 +1,21 @@
+*{
+    background-color: black;
+}
+#loading{
+    height: 200px;
+    width: 200px;
+    border: 15px solid white;
+    border-radius: 100%;
+    border-top: 15px solid red;
+    border-bottom: 15px solid green;
+    animation: 1s spin linear infinite;
+}
+@keyframes spin{
+    0%{
+      filter: hue-rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+        filter: hue-rotate(360deg);
+    }
+}
